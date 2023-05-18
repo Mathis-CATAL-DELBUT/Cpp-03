@@ -6,11 +6,11 @@
 #    By: mcatal-d <mcatal-d@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/18 02:11:32 by mcatal-d          #+#    #+#              #
-#    Updated: 2023/05/18 02:12:03 by mcatal-d         ###   ########.fr        #
+#    Updated: 2023/05/18 04:06:45 by mcatal-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME    		= Fixed
+NAME    		= ScavTrap
 SRC             = main.cpp ClapTrap.cpp ScavTrap.cpp
 
 OBJ             = $(SRC:.cpp=.o)
