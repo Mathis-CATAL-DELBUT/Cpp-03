@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcatal-d <mcatal-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mcatal-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 02:18:02 by mcatal-d          #+#    #+#             */
-/*   Updated: 2023/05/18 04:05:15 by mcatal-d         ###   ########.fr       */
+/*   Updated: 2023/05/18 18:24:16 by mcatal-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,12 +49,12 @@ ClapTrap::ClapTrap( std::string name, int HitPoints, int EnergyPoints, int Attac
 	_name( name ), _hitPoints( HitPoints ), _energyPoints( EnergyPoints ), _attackDamage( AttackDamage )
 {
 
-	std::cout \
-	<< "ClapTrapper: " \
-	<< "\033[0;36m" \
-	<< _name \
-	<< "\033[0m" \
-	<< " Constructor with Random params " \
+	std::cout
+    << cyan
+	<< "ClapTrapper: "
+	<< _name
+	<< " Constructor with specific parameters"
+    << reset
 	<< std::endl;
 
 }
