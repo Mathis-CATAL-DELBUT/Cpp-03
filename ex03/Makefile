@@ -6,11 +6,11 @@
 #    By: mcatal-d <mcatal-d@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/18 02:12:27 by mcatal-d          #+#    #+#              #
-#    Updated: 2023/05/18 02:12:37 by mcatal-d         ###   ########.fr        #
+#    Updated: 2023/05/18 04:23:47 by mcatal-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME    		= Fixed
+NAME    		= DiamondTrap
 SRC             = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 
 OBJ             = $(SRC:.cpp=.o)
