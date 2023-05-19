@@ -6,7 +6,7 @@
 /*   By: mcatal-d <mcatal-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 04:17:42 by mcatal-d          #+#    #+#             */
-/*   Updated: 2023/05/18 04:19:18 by mcatal-d         ###   ########.fr       */
+/*   Updated: 2023/05/19 08:58:16 by mcatal-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ class DiamondTrap : public ScavTrap, public FragTrap
         ~DiamondTrap();
         DiamondTrap &operator=(const DiamondTrap &copy);
         void whoAmI();
+        void attack(std::string const & target);
 };
 
 #endif

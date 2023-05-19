@@ -6,7 +6,7 @@
 /*   By: mcatal-d <mcatal-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 04:21:03 by mcatal-d          #+#    #+#             */
-/*   Updated: 2023/05/18 04:21:10 by mcatal-d         ###   ########.fr       */
+/*   Updated: 2023/05/19 09:17:19 by mcatal-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int main()
     diamond.guardGate();
     diamond.whoAmI();
 
-    for (int i = 0; i < 11; i++)
+    for (int i = 0; i < 50; i++)
         diamond.beRepaired(20);
     return (0);
 }

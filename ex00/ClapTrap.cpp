@@ -6,7 +6,7 @@
 /*   By: mcatal-d <mcatal-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 02:18:02 by mcatal-d          #+#    #+#             */
-/*   Updated: 2023/05/18 03:56:10 by mcatal-d         ###   ########.fr       */
+/*   Updated: 2023/05/19 08:30:16 by mcatal-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,6 @@ ClapTrap::ClapTrap(std::string name)
 
 ClapTrap::ClapTrap(const ClapTrap &copy)
 {
-    *this = copy;
-
 	std::cout 
     << cyan
     << "ClapTrap Copy Constructor" 
@@ -43,6 +41,7 @@ ClapTrap::ClapTrap(const ClapTrap &copy)
     << reset
     << std::endl;
 
+    *this = copy;
 }
 
 ClapTrap::~ClapTrap()

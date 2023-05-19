@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcatal-d <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mcatal-d <mcatal-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 02:18:02 by mcatal-d          #+#    #+#             */
-/*   Updated: 2023/05/18 18:24:16 by mcatal-d         ###   ########.fr       */
+/*   Updated: 2023/05/19 08:36:02 by mcatal-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,9 +51,7 @@ ClapTrap::ClapTrap( std::string name, int HitPoints, int EnergyPoints, int Attac
 
 	std::cout
     << cyan
-	<< "ClapTrapper: "
-	<< _name
-	<< " Constructor with specific parameters"
+	<< "ClapTrapper: Constructor with specific parameters"
     << reset
 	<< std::endl;
 
@@ -87,7 +85,7 @@ void ClapTrap::attack(std::string const & target)
     }
     else
         std::cout << "ClapTrap " << this->_name << " can't attack, " << red << "he has no energy left " << reset << std::endl;
-    }
+}
 
 void ClapTrap::takeDamage(unsigned int amount)
 {

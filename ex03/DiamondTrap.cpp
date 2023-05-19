@@ -6,7 +6,7 @@
 /*   By: mcatal-d <mcatal-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 04:19:27 by mcatal-d          #+#    #+#             */
-/*   Updated: 2023/05/18 04:25:30 by mcatal-d         ###   ########.fr       */
+/*   Updated: 2023/05/19 09:14:06 by mcatal-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@ const std::string green("\033[1;32m");
 const std::string cyan("\033[1;36m");
 const std::string reset("\033[0m");
 
-DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name"), ScavTrap(name), FragTrap(name)
+DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name", 100, 50, 30), ScavTrap(name), FragTrap(name)
 {
     this->_name = name;
-    this->_hitPoints = FragTrap::_hitPoints;
-    this->_energyPoints = ScavTrap::_energyPoints;
-    this->_attackDamage = FragTrap::_attackDamage;
+    // this->_hitPoints = FragTrap::_hitPoints;
+    // this->_energyPoints = ScavTrap::_energyPoints;
+    // this->_attackDamage = FragTrap::_attackDamage;
     std::cout << "DiamondTrap " << this->_name << " is born" << std::endl;
 }
 
@@ -43,7 +43,6 @@ DiamondTrap::~DiamondTrap()
 
 DiamondTrap &DiamondTrap::operator=(const DiamondTrap &copy)
 {
-    std::cout << "DiamondTrap assignation operator called" << std::endl;
     this->_name = copy._name;
     this->_hitPoints = copy._hitPoints;
     this->_energyPoints = copy._energyPoints;
@@ -54,4 +53,9 @@ DiamondTrap &DiamondTrap::operator=(const DiamondTrap &copy)
 void DiamondTrap::whoAmI()
 {
     std::cout << "My name is " << this->_name << " and my ClapTrap name is " << ClapTrap::_name << std::endl;
+}
+
+void DiamondTrap::attack(std::string const &target)
+{
+    ScavTrap::attack(target);
 }

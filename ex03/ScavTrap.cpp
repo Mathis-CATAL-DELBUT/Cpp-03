@@ -6,7 +6,7 @@
 /*   By: mcatal-d <mcatal-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 03:57:20 by mcatal-d          #+#    #+#             */
-/*   Updated: 2023/05/18 04:05:47 by mcatal-d         ###   ########.fr       */
+/*   Updated: 2023/05/19 09:16:40 by mcatal-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,7 @@ ScavTrap::ScavTrap(const ScavTrap &copy) : ClapTrap(copy)
 
     std::cout 
     << cyan
-    << "ScavTrap Copy Constructor" 
-    << _name 
-    << " has been called"
+    << "ScavTrap Copy Constructor has been called"
     << reset
     << std::endl;
 
@@ -51,7 +49,6 @@ ScavTrap::~ScavTrap()
 
 ScavTrap &ScavTrap::operator=(const ScavTrap &copy)
 {
-    std::cout << "ScavTrap assignation operator called" << std::endl;
     this->_name = copy._name;
     this->_hitPoints = copy._hitPoints;
     this->_energyPoints = copy._energyPoints;
@@ -67,3 +64,14 @@ void    ScavTrap::guardGate()
     << " have enterred in Gate keeper mode"
     << std::endl;
 }
+
+void    ScavTrap::attack(std::string const & target)
+{
+    if (this->_energyPoints > 0)
+    {
+        std::cout << "ScavTrap " << this->_name << " attack " << target << ", causing " << this->_attackDamage << " points of damage!" << std::endl;
+        this->_energyPoints--;
+    }
+    else
+        std::cout << "ScavTrap " << this->_name << " can't attack, " << red << "he has no energy left " << reset << std::endl;
+    }

@@ -6,7 +6,7 @@
 /*   By: mcatal-d <mcatal-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 02:18:02 by mcatal-d          #+#    #+#             */
-/*   Updated: 2023/05/18 04:05:15 by mcatal-d         ###   ########.fr       */
+/*   Updated: 2023/05/19 08:40:28 by mcatal-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,13 +49,11 @@ ClapTrap::ClapTrap( std::string name, int HitPoints, int EnergyPoints, int Attac
 	_name( name ), _hitPoints( HitPoints ), _energyPoints( EnergyPoints ), _attackDamage( AttackDamage )
 {
 
-	std::cout \
-	<< "ClapTrapper: " \
-	<< "\033[0;36m" \
-	<< _name \
-	<< "\033[0m" \
-	<< " Constructor with Random params " \
-	<< std::endl;
+	std::cout
+    << cyan
+	<< "ClapTrapper: Constructor with Random params" 
+	<< reset
+    << std::endl;
 
 }
 

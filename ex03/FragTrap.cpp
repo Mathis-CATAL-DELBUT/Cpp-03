@@ -6,7 +6,7 @@
 /*   By: mcatal-d <mcatal-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 04:13:04 by mcatal-d          #+#    #+#             */
-/*   Updated: 2023/05/18 04:14:08 by mcatal-d         ###   ########.fr       */
+/*   Updated: 2023/05/19 09:14:44 by mcatal-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,7 @@ FragTrap::FragTrap(const FragTrap &copy) : ClapTrap(copy)
 
     std::cout 
     << cyan
-    << "FragTrap Copy Constructor" 
-    << _name 
-    << " has been called"
+    << "FragTrap Copy Constructor has been called"
     << reset
     << std::endl;
 
@@ -52,7 +50,6 @@ FragTrap::~FragTrap()
 
 FragTrap &FragTrap::operator=(const FragTrap &copy)
 {
-    std::cout << "FragTrap assignation operator called" << std::endl;
     this->_name = copy._name;
     this->_hitPoints = copy._hitPoints;
     this->_energyPoints = copy._energyPoints;

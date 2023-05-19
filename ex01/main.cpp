@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcatal-d <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mcatal-d <mcatal-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 04:04:02 by mcatal-d          #+#    #+#             */
-/*   Updated: 2023/05/18 18:26:20 by mcatal-d         ###   ########.fr       */
+/*   Updated: 2023/05/19 08:37:07 by mcatal-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,8 @@ int main()
 
     for (int i = 0; i < 11; i++)
         clap.beRepaired(20);
+
+    for (int i = 0; i < 51; i++)
+        scav.beRepaired(20);
     return (0);
 }
